@@ -1,7 +1,8 @@
 <template>
-	<div class="posts">
+	
+	<div class="posts row">
 	<hr>
-		<div class="post" v-for="(post,index) in results" :class="{done: post.done}">
+		<div class="post col-12 col-md-3" v-for="(post,index) in results" :class="{done: post.done}" >
 			<img :src="post.img" class="img-thumbnail" alt="Responsive image" >
 			<h3>{{post.title}}</h3>
 			<button class="btn btn-danger">
@@ -18,7 +19,7 @@
 				<br>
 				<button class="btn btn-primary" @click="post.done = !post.done">Not Done</button>
 			</div>
-			<hr>
+		
 		</div>
 	</div>
 </template>
@@ -40,17 +41,25 @@ export default {
 }
 </script>
 <style>
+	
 	img{
-		width: 200px;
-		height: 200px;
+	position: relative;
+    max-width:  200px;
+    max-height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
 	}
 	span{
 		color:white;
 	}
 	.post.done{
-		background-color: aqua;
+		background-color: #51bad7;
 	}
 	.post{
-		background-color: #E0E0E0;
+		border:1px solid #EBA39E;
+		padding-bottom:5px;
+		
 	}
 </style>

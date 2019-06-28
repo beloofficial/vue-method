@@ -13,7 +13,19 @@ const store = new Vuex.Store({
 				'done':false
 			},
 			{
-				'img':'https://i.imgur.com/vQmsIl7.jpg',
+				'img':'https://render.fineartamerica.com/images/rendered/default/print/4.500/8.000/break/images/artworkimages/medium/2/aquaman-geek-n-rock.jpg',
+				'title':'Nurs',
+				'body':'Nurs is the best',
+				'done':false
+			},
+			{
+				'img':'https://talenthouse-res.cloudinary.com/image/upload/c_limit,f_auto,fl_progressive,h_1280,w_1280/v1543122416/user-539116/submissions/vulcpz640asmsvljit6h.jpg',
+				'title':'Madi',
+				'body':'Madi is the best',
+				'done':false
+			},
+			{
+				'img':'https://i.etsystatic.com/8610102/r/il/a2d4c5/1777058613/il_794xN.1777058613_d02u.jpg',
 				'title':'Nurs',
 				'body':'Nurs is the best',
 				'done':false

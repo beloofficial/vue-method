@@ -24,7 +24,7 @@
       <input type="text" id="img" class="fadeIn second form-control" name="img" placeholder="Link" v-model="img" required>
       <input type="text" id="title" class="form-control fadeIn third " name="title" placeholder="Title" v-model='title' required>
       <input type="text" id="body" class="fadeIn third form-control" name="body" placeholder="Body" v-model='body' required>
-      <button class="btn btn-success" value="Create" v-on:click="save">Save</button>
+      <button class="btn btn-success save" value="Create" v-on:click="save">Save</button>
     <!-- Remind Passowrd -->
 
   </div>
@@ -83,6 +83,14 @@
 
 
 <style>	
+
+h3 {
+  margin-top:10px;
+}
+.save {
+  margin: 10px 0px;
+  width: 60%;
+}
 html {
  
 }
