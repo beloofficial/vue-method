@@ -5,11 +5,11 @@
 		<div class="postClass col-12 col-md-3" v-for="(post,index) in results" :class="{done: post.done}" >
 			<img :src="post.img" class="img-thumbnail" alt="Responsive image" >
 			<h3>{{post.title}}</h3>
-			<button class="btn btn-danger">
+			
 				<router-link :to="{name: 'Post', params: { id:index } }">
-					<span>Подробнее</span>
+					<button class="btn btn-danger"><span>Подробнее</span></button>
 				</router-link>
-			</button>
+			
 			
 			<div v-if='!post.done'>
 				<br>

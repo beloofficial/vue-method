@@ -17,25 +17,25 @@
         <img :src="result.img" class="img-thumbnail" alt="Responsive image" >
       
       <div>
-        <input class="form-control" style="text-align: center;" type="text" name="title" v-if="update"  v-model='title' placeholder="Title" required>
+        <input class="inputB form-control" style="text-align: center;" type="text" name="title" v-if="update"  v-model='title' placeholder="Title" required>
           <h3 v-else>{{result.title}}</h3>
-          <div class="col-sm">
-            <input class="form-control" style="text-align: center;" type="text" name="body" v-if="update"  v-model='body' placeholder="Body" required>
+          
+            <input class="inputB form-control" style="text-align: center;" type="text" name="body" v-if="update"  v-model='body' placeholder="Body" required>
             <h3 v-else>{{result.body}}</h3>
-          </div>
+          
         </div>
       </div>
-      <button class="btn btn-warning" @click="update = !update" v-if="!update" >Update </button>
-      <button class="btn btn-warning" @click="update = !update" v-if="update" >Cancel</button>
-      <button class="btn btn-warning" @click="update1" v-if="update">Confirm</button>
-      <button class="btn btn-danger" @click="delete1">Delete</button>
+      <button class="postB btn btn-warning" @click="update = !update" v-if="!update" >Update </button>
+      <button class="postB btn btn-warning" @click="update = !update" v-if="update" >Cancel</button>
+      <button class="postB btn btn-warning" @click="update1" v-if="update">Confirm</button>
+      <button class="postB btn btn-danger" @click="delete1">Delete</button>
       <div v-if='!result.done'>
       <br>
-      <button class="btn btn-primary" @click="result.done = !result.done">Done</button>
+      <button class="postB btn btn-primary" @click="result.done = !result.done">Done</button>
     </div>
     <div v-else>
       <br>
-      <button class="btn btn-primary" @click="result.done = !result.done">Not Done</button>
+      <button class="postB btn btn-primary" @click="result.done = !result.done">Not Done</button>
     </div>
       </div>
     </div>
@@ -106,6 +106,18 @@ export default {
 }
 </script>
 <style>
+.inputB{
+  width: 50%;
+  height: 70px;
+  
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 20px;
+  
+}
+.postB {
+  width: 20%;
+}
 	.box.done{
 		background-color: #51bad7;
 	}
