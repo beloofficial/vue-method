@@ -13,7 +13,7 @@ import Create from './components/Create.vue';
 import Update from './components/Update.vue';
 export default {
   name: 'App',
-  components:{Posts, Create, Update}
+  components:{ Posts, Create, Update}
 }
 </script>
 
