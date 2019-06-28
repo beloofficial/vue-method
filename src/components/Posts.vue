@@ -2,7 +2,7 @@
 	
 	<div class="posts row">
 	<hr>
-		<div class="post col-12 col-md-3" v-for="(post,index) in results" :class="{done: post.done}" >
+		<div class="postClass col-12 col-md-3" v-for="(post,index) in results" :class="{done: post.done}" >
 			<img :src="post.img" class="img-thumbnail" alt="Responsive image" >
 			<h3>{{post.title}}</h3>
 			<button class="btn btn-danger">
@@ -31,6 +31,7 @@ export default {
   data () {
     return {
       done:true,
+      color:'#e5faff',
     }
   },
   computed:{
@@ -54,12 +55,12 @@ export default {
 	span{
 		color:white;
 	}
-	.post.done{
+	.postClass.done{
 		background-color: #51bad7;
 	}
-	.post{
+	.postClass{
 		border:1px solid #EBA39E;
 		padding-bottom:5px;
-		
+		background-color: #e5faff;
 	}
 </style>

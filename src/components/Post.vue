@@ -17,10 +17,10 @@
         <img :src="result.img" class="img-thumbnail" alt="Responsive image" >
       
       <div>
-        <input class="form-control justify-content-center" type="text" name="title" v-if="update"  v-model='title' placeholder="Title" required>
+        <input class="form-control" style="text-align: center;" type="text" name="title" v-if="update"  v-model='title' placeholder="Title" required>
           <h3 v-else>{{result.title}}</h3>
           <div class="col-sm">
-            <input class="form-control justify-content-center" type="text" name="body" v-if="update"  v-model='body' placeholder="Body" required>
+            <input class="form-control" style="text-align: center;" type="text" name="body" v-if="update"  v-model='body' placeholder="Body" required>
             <h3 v-else>{{result.body}}</h3>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default {
 }
 </script>
 <style>
-	.box1.done{
+	.box.done{
 		background-color: #51bad7;
 	}
 	img{
@@ -120,7 +120,7 @@ export default {
 }
 .box{
   width:100%;
-  height:85vh;
+  height:80vh;
   float:left;
   background-color:white; 
   margin:25px 15px;
